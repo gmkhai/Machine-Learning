@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Predictions App</title>
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+        <!-- ini form yang disesuaikan dengan atribut yang ada di dataset selain data label perhatikan atribut "name" yang akan dikirim ke codingan views.py-->
+        <label for="pregnancies">Pregnancies</label>
+        <input id="pregnancies" type="number" name="pregnancies" placeholder="Pregnancies">
+        <label for="glocose">Glocose</label>
+        <input type="number" name="glocose" id="glocose" placeholder="Glocose">
+        <label for="bloodpressure">Blood Pressure</label>
+        <input type="number" name="bloodpressure" id="bloodpressure" placeholder="Blood Pressure">
+        <label for="skinthickness">Skin Thickness</label>
+        <input type="number" name="skinthickness" id="skinthickness" placeholder="Skin Thickness">
+        <label for="insulin">Insulin</label>
+        <input type="number" name="insulin" id="insulin" placeholder="Insulin">
+        <label for="bmi">BMI</label>
+        <input type="number" name="bmi" id="bmi" placeholder="BMI">
+        <label for="diabetespedigreefunction">Diabetes Pedigree Function</label>
+        <input type="number" name="diabetespedigreefunction" id="diabetespedigreefunction" placeholder="Diabetes Pedigree Function">
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" placeholder="Age">
+        <button type="submit">Predict</button>
+    </form>
+    <h1>{{prediksi}}</h1>
+    
+</body>
+</html>
