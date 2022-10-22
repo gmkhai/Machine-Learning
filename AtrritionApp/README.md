@@ -5,7 +5,7 @@ $ pip install -r requirements.txt
 
 jika telah berhasil, silahkan dijalankan dengan perintah ini:
 
-python manage.py runserver
+$ python manage.py runserver
 
 pastikan cmd berada di path AttritionApp/
 
